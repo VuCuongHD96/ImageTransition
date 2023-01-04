@@ -13,9 +13,18 @@
 		967F05BF295F2EB900A273EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967F05BD295F2EB900A273EE /* Main.storyboard */; };
 		967F05C1295F2EBA00A273EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967F05C0295F2EBA00A273EE /* Assets.xcassets */; };
 		967F05C4295F2EBA00A273EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967F05C2295F2EBA00A273EE /* LaunchScreen.storyboard */; };
+		967F05CE295F2F1500A273EE /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F05CC295F2F1500A273EE /* ImageViewController.swift */; };
+		967F05CF295F2F1500A273EE /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 967F05CD295F2F1500A273EE /* ImageViewController.xib */; };
+		967F05D2295FF78C00A273EE /* ImagePresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F05D1295FF78C00A273EE /* ImagePresentTransition.swift */; };
+		967F05D429611BA900A273EE /* ImageDismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F05D329611BA900A273EE /* ImageDismissTransition.swift */; };
+		967F05D62961815500A273EE /* ImageTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F05D52961815500A273EE /* ImageTransitionManager.swift */; };
+		F64012433CA4DC2516E42A1F /* Pods_ImageTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DF5198B6EFF322FA2A09F8 /* Pods_ImageTransition.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01B51DD21D698BC2AD550F2B /* Pods-ImageTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageTransition.debug.xcconfig"; path = "Target Support Files/Pods-ImageTransition/Pods-ImageTransition.debug.xcconfig"; sourceTree = "<group>"; };
+		55DF5198B6EFF322FA2A09F8 /* Pods_ImageTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A61D21DC5DAA0272CC7F2B4 /* Pods-ImageTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageTransition.release.xcconfig"; path = "Target Support Files/Pods-ImageTransition/Pods-ImageTransition.release.xcconfig"; sourceTree = "<group>"; };
 		967F05B4295F2EB900A273EE /* ImageTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967F05B7295F2EB900A273EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		967F05B9295F2EB900A273EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		967F05C0295F2EBA00A273EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		967F05C3295F2EBA00A273EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		967F05C5295F2EBA00A273EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		967F05CC295F2F1500A273EE /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		967F05CD295F2F1500A273EE /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
+		967F05D1295FF78C00A273EE /* ImagePresentTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePresentTransition.swift; sourceTree = "<group>"; };
+		967F05D329611BA900A273EE /* ImageDismissTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDismissTransition.swift; sourceTree = "<group>"; };
+		967F05D52961815500A273EE /* ImageTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransitionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64012433CA4DC2516E42A1F /* Pods_ImageTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06041208A8E5FCE35BB9E74D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55DF5198B6EFF322FA2A09F8 /* Pods_ImageTransition.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		123CE86F520ED822BC636D74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01B51DD21D698BC2AD550F2B /* Pods-ImageTransition.debug.xcconfig */,
+				7A61D21DC5DAA0272CC7F2B4 /* Pods-ImageTransition.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		967F05AB295F2EB900A273EE = {
 			isa = PBXGroup;
 			children = (
 				967F05B6295F2EB900A273EE /* ImageTransition */,
 				967F05B5295F2EB900A273EE /* Products */,
+				123CE86F520ED822BC636D74 /* Pods */,
+				06041208A8E5FCE35BB9E74D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +91,8 @@
 		967F05B6295F2EB900A273EE /* ImageTransition */ = {
 			isa = PBXGroup;
 			children = (
+				967F05D0295FF77D00A273EE /* Transition */,
+				967F05CB295F2EF200A273EE /* Scenes */,
 				967F05B7295F2EB900A273EE /* AppDelegate.swift */,
 				967F05B9295F2EB900A273EE /* SceneDelegate.swift */,
 				967F05BB295F2EB900A273EE /* ViewController.swift */,
@@ -67,6 +104,25 @@
 			path = ImageTransition;
 			sourceTree = "<group>";
 		};
+		967F05CB295F2EF200A273EE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				967F05CC295F2F1500A273EE /* ImageViewController.swift */,
+				967F05CD295F2F1500A273EE /* ImageViewController.xib */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		967F05D0295FF77D00A273EE /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				967F05D1295FF78C00A273EE /* ImagePresentTransition.swift */,
+				967F05D329611BA900A273EE /* ImageDismissTransition.swift */,
+				967F05D52961815500A273EE /* ImageTransitionManager.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 967F05C8295F2EBA00A273EE /* Build configuration list for PBXNativeTarget "ImageTransition" */;
 			buildPhases = (
+				7A1F33054E1891BC00E69F16 /* [CP] Check Pods Manifest.lock */,
 				967F05B0295F2EB900A273EE /* Sources */,
 				967F05B1295F2EB900A273EE /* Frameworks */,
 				967F05B2295F2EB900A273EE /* Resources */,
+				1D2CFB7DF5CF0C4D5A78C7A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +185,54 @@
 			files = (
 				967F05C4295F2EBA00A273EE /* LaunchScreen.storyboard in Resources */,
 				967F05C1295F2EBA00A273EE /* Assets.xcassets in Resources */,
+				967F05CF295F2F1500A273EE /* ImageViewController.xib in Resources */,
 				967F05BF295F2EB900A273EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D2CFB7DF5CF0C4D5A78C7A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageTransition/Pods-ImageTransition-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageTransition/Pods-ImageTransition-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageTransition/Pods-ImageTransition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A1F33054E1891BC00E69F16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageTransition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		967F05B0295F2EB900A273EE /* Sources */ = {
@@ -140,7 +241,11 @@
 			files = (
 				967F05BC295F2EB900A273EE /* ViewController.swift in Sources */,
 				967F05B8295F2EB900A273EE /* AppDelegate.swift in Sources */,
+				967F05CE295F2F1500A273EE /* ImageViewController.swift in Sources */,
+				967F05D429611BA900A273EE /* ImageDismissTransition.swift in Sources */,
+				967F05D62961815500A273EE /* ImageTransitionManager.swift in Sources */,
 				967F05BA295F2EB900A273EE /* SceneDelegate.swift in Sources */,
+				967F05D2295FF78C00A273EE /* ImagePresentTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +387,7 @@
 		};
 		967F05C9295F2EBA00A273EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01B51DD21D698BC2AD550F2B /* Pods-ImageTransition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +400,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,14 +408,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cuong.ios.ImageTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		967F05CA295F2EBA00A273EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A61D21DC5DAA0272CC7F2B4 /* Pods-ImageTransition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +432,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +440,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cuong.ios.ImageTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
