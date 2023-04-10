@@ -66,7 +66,6 @@
 				01B51DD21D698BC2AD550F2B /* Pods-ImageTransition.debug.xcconfig */,
 				7A61D21DC5DAA0272CC7F2B4 /* Pods-ImageTransition.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -393,6 +392,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GCAT449K7M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageTransition/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -425,6 +425,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GCAT449K7M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageTransition/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
